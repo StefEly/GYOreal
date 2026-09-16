@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styleGallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="" onclick="closeMenu()">GY' Oreal</a>
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="sidebar-menu">
+            <button class="close-btn" onclick="closeMenu()" aria-label="Close menu">&times;</button>
+
+            <li><a href="/index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="/gallery.html" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="/AboutUs.html" onclick="closeMenu()">About Us</a></li>
+            <li><a href="/Tips&Trends.html" onclick="closeMenu()">Tips &  Trends</a></li>
+            <li><a href="/Subscription.html" onclick="closeMenu()">Subscription</a></li>
+        </ul>
+    </nav>
+        
+    <section class="summary">
+        <span>Product Catalog</span>
+        <h1>Our Collection</h1>
+        <div class="strip"></div>
+        <p>Explore our full range of luxury makeup products — each crafted with care to deliver flawless, lasting beauty.</p>
+            <div class="buttons">
+                <button class="btn btn--primmary"><a href="/gallery.html">All Products</a></button>
+                <button class="btn btn--second"><a href="/galleryFace.html">Face Makeup</a></button>
+                <button class="btn btn--third"><a href="/galleryLip.html">Lip Products</a></button>
+                <button class="btn btn--fourth"><a href="/galleryEyelashes.html">Eyelashes Collections</a></button>
+                <button class="btn btn--fifth"><a href="/gallerySkincare.html">Skincare</a></button>
+            </div>
+    </section>
+
+    <section class="cards">
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Lip Products/Lip Products 1.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Lip Products</span>
+                <h3>Soft Velvet Tint</h3>
+                <p>Lightweight velvet tint with a smooth matte finish and long-lasting color payoff.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$24.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Skincare Products/Skincare 3.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Skincare Products</span>
+                <h3>Radiance Glow Serum</h3>
+                <p>Brightening serum with a silky texture that helps improve skin glow and maintain healthy moisture levels.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$32.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Eyelashes Products/Eyelashes 5.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Eyelashes Collections</span>
+                <h3>Everyday Natural Lashes</h3>
+                <p>Comfortable lightweight lashes perfect for daily wear with a subtle and naturally enhanced finish.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$15.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+             <div class="productPics">
+                <img src="/pics/Face Makeups Products/Face Makeup 2.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Face Makeup Products</span>
+                <h3>Soft Perfection Loose Powder</h3>
+                <p>Ultra-fine setting powder that helps blur pores, reduce shine, and keep makeup fresh throughout the day.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$26.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Lip Products/Lip Products 3.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Lip Products</span>
+                <h3>Nude Satin Lipstick</h3>
+                <p>Elegant satin lipstick with rich color, silky texture, and moisturizing ingredients.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$22.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+           <div class="productPics">
+                <img src="/pics/Lip Products/Lip Products 5.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Lip Products</span>
+                <h3>Cherry Lip Stain</h3>
+                <p>Long-wear lip stain with vibrant cherry tones, lightweight texture, and a fresh natural finish that stays comfortable.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$26.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Lip Products/Lip Products 2.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Lip Products</span>
+                <h3>Rosy Matte Lip Cream</h3>
+                <p>Creamy matte formula that delivers bold pigment while keeping lips soft and comfortable.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$28.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Eyelashes Products/Eyelashes 2.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Eyelashes Collections</span>
+                <h3>Volume Edition Lashes</h3>
+                <p>Bold volume lashes crafted with layered strands to enhance eye definition and glamorous makeup styles.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$21.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Skincare Products/Skincare 1.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Skincare Products</span>
+                <h3>Gentle Foam Cleanser</h3>
+                <p>Soft foaming cleanser that removes dirt, oil, and impurities while keeping skin fresh and hydrated.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$18.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Eyelashes Products/Eyelashes 1.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Eyelashes Collections</span>
+                <h3>Natural Flutter Lashes</h3>
+                <p>Lightweight lashes with soft wispy fibers designed to create a naturally fuller and elegant everyday look.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$16.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Skincare Products/Skincare 4.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Skincare Products</span>
+                <h3>Daily Moisture Cream</h3>
+                <p>Rich moisturizing cream designed to nourish dry skin and provide long-lasting hydration throughout the day.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$29.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Face Makeups Products/Face Makeup 4.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Face Makeup Products</span>
+                <h3>Makeup Setting Spray</h3>
+                <p>Lightweight setting spray that locks makeup in place while giving skin a fresh and hydrated appearance.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$32.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Lip Products/Lip Products 4.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Lip Products</span>
+                <h3>Crystal Shine Gloss</h3>
+                <p>High-shine lip gloss with a non-sticky formula for a fuller and radiant lip look.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$20.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+
+        <div class="productCards">
+            <div class="productPics">
+                <img src="/pics/Face Makeups Products/Face Makeup 1.webp" alt="">
+            </div>
+
+            <div class="productInfo">
+                <span>Face Makeup Products</span>
+                <h3>Radiant Silk Foundation</h3>
+                <p>Smooth liquid foundation with medium-to-full coverage that creates a flawless and naturally radiant complexion.</p>
+            </div>
+
+            <div class="productDetails">
+                <h3>$34.00</h3>
+                <button class="btn2">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/AboutUs.html">About Us</a></li>
+                        <li><a href="/AboutUs.html">Our Story</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="/Subscription.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping Info</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Customer Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="/galleryFace.html">Face Makeup</a></li>
+                        <li><a href="/galleryLip.html">Lip Products</a></li>
+                        <li><a href="/galleryEyelashes.html">Eyelashes Collections</a></li>
+                        <li><a href="/gallerySkincare.html">Skincare</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

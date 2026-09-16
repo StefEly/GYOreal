@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="" onclick="closeMenu()">GY' Oreal</a>
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="sidebar-menu">
+            <button class="close-btn" onclick="closeMenu()" aria-label="Close menu">&times;</button>
+
+            <li><a href="/index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="/gallery.html" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="/AboutUs.html" onclick="closeMenu()">About Us</a></li>
+            <li><a href="/Tips&Trends.html" onclick="closeMenu()">Tips &  Trends</a></li>
+            <li><a href="/Subscription.html" onclick="closeMenu()">Subscription</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <section class="hero">
+        <div class="hero-buttons">
+            <button class="btn btn--primary">
+                <a href="/gallery.html">Explore Collections</a>
+            </button>
+
+            <button class="btn btn--secondary">
+                <a href="/AboutUs.html">Our Story</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-container">
+
+            <div class="stat-box">
+                <h2>200+</h2>
+                <p>Products</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50K+</h2>
+                <p>Customers</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>15+</h2>
+                <p>Awards</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>8 Yrs</h2>
+                <p>Est. Since</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="featured">
+
+        <div class="featured-title">
+            <span>FEATURED COLLECTION</span>
+            <h2>Our Best Sellers</h2>
+            <p>Handpicked by our beauty experts</p>
+        </div>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/pics/Home Page/featured/pic1.webp" alt="Velvet Lip Elixir">
+                </div>
+                <div class="product-content">
+                    <h3>Velvet Lip Elixir</h3>
+                    <p>
+                        Long-lasting formula with rich
+                        pigmentation and moisturizing effect
+                    </p>
+                    <h4>Rp 285.000</h4>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/pics/Home Page/featured/pic3.jpg" alt="Luminous Eye Pallete">
+                </div>
+                <div class="product-content">
+                    <h3>Luminous Eye Palette</h3>
+                    <p>
+                        12-shade collection inspired by
+                        golden hour light
+                    </p>
+                    <h4>Rp 450.000</h4>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/pics/Home Page/featured/pic2.jpg" alt="Radiance Foundation">
+                </div>
+                <div class="product-content">
+                    <h3>Radiance Foundation</h3>
+                    <p>
+                        Buildable coverage with a natural
+                        dewy finish for all skin tones
+                    </p>
+                    <h4>Rp 390.000</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="philosophy">
+        <div class="philosophy-container">
+            <div class="philosophy-text">
+
+                <span>OUR PHILOSOPHY</span>
+
+                <div class="line"></div>
+
+                <h2>
+                    Beauty is an art,
+                    <br>
+                    we are your canvas.
+                </h2>
+
+                <p>
+                    At GY'Oreal, we believe that beauty is not
+                    just about appearance — it's about confidence,
+                    self-expression, and artistry.
+                    Every product is crafted with precision and passion.
+                </p>
+
+                <p>
+                    Our formulas are dermatologist-tested,
+                    cruelty-free, and designed for all skin types.
+                </p>
+
+                <button class="btn btn--gold">
+                    <a href="/AboutUs.html">Learn More</a>
+                </button>
+
+            </div>
+
+            <div class="philosophy-image">
+                <img src="/pics/Home Page/philosophy/model.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/AboutUs.html">About Us</a></li>
+                        <li><a href="/AboutUs.html">Our Story</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="/Subscription.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping Info</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Customer Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="/galleryFace.html">Face Makeup</a></li>
+                        <li><a href="/galleryLip.html">Lip Products</a></li>
+                        <li><a href="/galleryEyelashes.html">Eyelashes Collections</a></li>
+                        <li><a href="/gallerySkincare.html">Skincare</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

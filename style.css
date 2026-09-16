@@ -1,0 +1,753 @@
+@font-face {
+    font-family: 'Bodoni_Moda';
+    src: url(/Fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Elms Sans';
+    src: url(/Fonts/Elms_Sans/ElmsSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url(/Fonts/Tangerine/Tangerine-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Elms Sans', sans-serif;
+    background-color: rgb(35, 13, 42);
+}
+
+nav {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: oklch(76.795% 0.07213 320.754);
+    font-family: 'Bodoni_Moda', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(106, 44, 112, 0.55);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   /* background: transparent;*/
+    z-index: 10;
+   border-bottom: 1px solid rgba(224, 181, 143, 0.6);
+   position: sticky;
+}
+
+nav .logo a {
+    font-family: 'Tangerine', cursive;
+    color: rgb(253, 207, 82);
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: clamp(24px, 3vw, 42px);
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: rgb(253, 207, 82);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover,
+nav .logo a:hover {
+    color: rgb(255, 204, 0);
+    text-shadow:
+        0 0 5px rgba(224, 181, 143, 0.7),
+        0 0 10px rgba(224, 181, 143, 0.6),
+        0 0 20px rgba(224, 181, 143, 0.5);
+    transform: scale(1.05);
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/pics/Home\ Page/hero/background.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-buttons {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color:#b69e00;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.btn:hover a{
+    color:#141d36;
+}
+
+.btn--gold a{
+    text-decoration: none;
+    color: #141d36;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.btn{
+    border-radius: 20px;
+    border: 2px solid #b69e00;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    white-space: nonwrap;
+    cursor: pointer;
+
+}
+
+.btn--primary{
+    background-color: rgb(241, 230, 240);
+    color: #b69e00;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+.btn--primary:hover{
+    background-color: #ebd337;
+}
+
+.btn--primary:hover a{
+    color: rgb(75, 44, 84);
+}
+
+.btn--secondary{
+    background-color: rgb(241, 230, 240);
+    color: #b69e00;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+.btn--secondary:hover{
+    background-color: #ebd337;
+}
+
+.btn--secondary:hover a{
+    color: rgb(75, 44, 84);
+}
+
+.stats {
+    background-color: #1f1f1f;
+    padding: 50px 20px;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.stat-box {
+    text-align: center;
+
+    min-width: 180px;
+
+    position: relative;
+}
+
+.stat-box h2 {
+    color: #d4af37;
+
+    font-size: 3rem;
+    font-family: 'Bodoni_Moda', serif;
+
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    color: #bdbdbd;
+
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.stat-box:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    right: -60px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 80px;
+
+    background-color:#b69e00;
+}
+
+.featured {
+    padding: 100px 40px;
+    background-color: #000000;
+}
+
+.featured-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.featured-title span {
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+}
+
+.featured-title h2 {
+    font-size: 3rem;
+    color: #f4d06f;
+
+    margin: 15px 0;
+
+    font-family: 'Bodoni_Moda', serif;
+}
+
+.featured-title p {
+    color: #bdbdbd;
+    font-size: 1.1rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 320px;
+
+    background-color: rgb(75, 44, 84);
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.product-image {
+    height: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    color: rgba(212, 175, 55, 0.5);
+
+    background-color: rgb(53, 31, 59);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit:contain;
+}
+
+.product-content {
+    padding: 25px;
+}
+
+.product-content h3 {
+    color: #f4d06f;
+
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+
+    font-family: 'Bodoni_Moda', serif;
+}
+
+.product-content p {
+    color: #bdbdbd;
+
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.product-content h4 {
+    color: #d4af37;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.philosophy {
+    padding: 120px 40px;
+    background-color:rgb(216, 180, 216);
+    background-image: url("/pics/Home\ Page/philosophy/bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.philosophy::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.philosophy > *{
+    position: relative;
+    z-index: 2;
+}
+
+.philosophy-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    background: rgb(35, 13, 42, 0.75);
+    backdrop-filter: blur(3px);
+    padding: 50px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.philosophy-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.philosophy-text span {
+    color: #b69e00;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background-color: #b69e00;
+    margin: 18px 0 30px;
+}
+
+.philosophy-text h2 {
+    color: #f4d06f;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+
+    margin-bottom: 30px;
+
+    font-family: 'Bodoni_Moda', serif;
+}
+
+.philosophy-text p {
+    color: #f1f1f1;
+
+    line-height: 2;
+    font-size: 1.1rem;
+
+    margin-bottom: 25px;
+
+    max-width: 650px;
+}
+
+.philosophy-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit:cover;
+}
+
+.btn--gold {
+    background-color: #d4af37;
+    color: rgb(75, 44, 84);
+
+    border: none;
+
+    transition: 0.3s ease;
+}
+
+.btn--gold a{
+    color: rgb(75, 44, 84);
+}
+
+.btn--gold:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.25);
+    color: rgb(75, 44, 84);
+}
+
+.btn--gold:hover a {
+    color: rgb(75, 44, 84);
+}
+
+.philosophy-image {
+    width: 320px;
+    height: 320px;
+
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #18284a;
+}
+
+.philosophy-image i {
+    font-size: 4rem;
+    color: rgba(212, 175, 55, 0.4);
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(224, 181, 143);
+    display: block;
+    transition: 0.3s;
+}
+
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: rgb(224, 181, 143);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: rgb(255, 204, 0);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99; 
+}
+
+.overlay.active {
+    display: block;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer{
+    background-color:#24262b;
+    padding: 70px 0;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #b69e00;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #b69e00;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #b69e00;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        font-size: clamp(14px, 1.6vw, 20px);
+        padding: 15px 24px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+
+        top: 80%;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+        position: fixed;
+        font-size: 16px;
+        z-index: 100;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 180px;      
+        height: 100vh;
+        background: rgba(5, 15, 45, 0.97);
+        padding: 60px 24px 30px;
+        gap: 20px;
+        z-index: 999;
+        align-items: flex-start;
+        font-size: 16px; 
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav ul.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+
+        top: 80%;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .stats-container {
+        justify-content: center;
+    }
+
+    .stat-box:not(:last-child)::after {
+        display: none;
+    }
+
+    .featured {
+        padding: 80px 20px;
+    }
+
+    .featured-title h2 {
+        font-size: 2.3rem;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .philosophy {
+        padding: 80px 20px;
+    }
+
+    .philosophy-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .line {
+        margin-inline: auto;
+    }
+
+    .philosophy-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .philosophy-image {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    nav .logo h3 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        width: 75vw;
+        max-width: 200px; /* Tapi tidak boleh lebih dari 200px */
+    }
+
+    .footer-col{
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+
+        top: 80%;
+    }
+
+    .btn {
+        margin: 0;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
