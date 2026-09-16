@@ -81,7 +81,7 @@ nav .logo a:hover {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url("/pics/Home\ Page/hero/background.webp");
+  background-image: url("pics/Home\ Page/hero/background.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -329,7 +329,7 @@ nav .logo a:hover {
 .philosophy {
   padding: 120px 40px;
   background-color: rgb(216, 180, 216);
-  background-image: url("/pics/Home\ Page/philosophy/bg.webp");
+  background-image: url("pics/Home\ Page/philosophy/bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
